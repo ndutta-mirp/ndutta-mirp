@@ -1,0 +1,150 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   int a,b,c,d, max=-99999, max2=-99999, max3=-99999;
+
+cout<<" ENTER FOUR NUMBERS: ";
+cin>>a>>b>>c>>d;
+
+if(a>max)
+ max=a;
+if(b>max)
+ max=b;
+if(c>max)
+ max=c;
+if(d>max)
+ max=d;
+
+if(max==a)
+{
+//bcd
+
+   if(b>max2)
+   {
+     max2=b;
+     //cd
+     if(c>d)
+      max3=c;
+     else
+      max3=d;
+   }
+   if(c>max2)
+   {
+     max2=c;
+    //db
+     if(d>b)
+      max3=d;
+     else
+      max3=b;
+  }
+   if(d>max2)
+   {
+     max2=c;
+    //cb
+     if(c>b)
+      max3=c;
+     else
+      max3=b;
+  }
+}
+if(max==b)
+{
+//acd
+
+   if(a>max2)
+   {
+     max2=a;
+     //cd
+     if(c>d)
+      max3=c;
+     else
+      max3=d;
+   }
+   if(c>max2)
+   {
+     max2=c;
+    //da
+     if(d>a)
+      max3=d;
+     else
+      max3=a;
+  }
+   if(d>max2)
+   {
+     max2=c;
+    //ca
+     if(c>a)
+      max3=c;
+     else
+      max3=a;
+  }
+}
+if(max==c)
+{
+//bad
+
+   if(b>max2)
+   {
+     max2=b;
+     //ad
+     if(a>d)
+      max3=a;
+     else
+      max3=d;
+   }
+   if(a>max2)
+   {
+     max2=a;
+    //db
+     if(d>b)
+      max3=d;
+     else
+      max3=b;
+  }
+   if(d>max2)
+   {
+     max2=a;
+    //ab
+     if(c>b)
+      max3=a;
+     else
+      max3=b;
+  }
+}
+if(max==d)
+{
+//bca
+
+   if(b>max2)
+   {
+     max2=b;
+     //ca
+     if(c>a)
+      max3=c;
+     else
+      max3=a;
+   }
+   if(c>max2)
+   {
+     max2=c;
+    //ab
+     if(a>b)
+      max3=a;
+     else
+      max3=b;
+  }
+   if(a>max2)
+   {
+     max2=c;
+    //cb
+     if(c>b)
+      max3=c;
+     else
+      max3=b;
+  }
+}
+cout<<" in descending order"<<max<<" "<<max2<<" "<<max3;endl;
+return 0;
+}
