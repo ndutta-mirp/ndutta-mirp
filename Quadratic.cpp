@@ -1,0 +1,29 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+    double a,b,c,x1,x2;
+    cout<<"Enter the coefficient of x^2"<<endl;
+    cin>>a;
+    cout<<"Enter the coefficient of x"<<endl;
+    cin>>b;
+    cout<<"Enter the coefficient of constant"<<endl;
+    cin>>c;
+    
+    
+    if (((b*b)-(4*a*c))>0){
+       cout <<"Real Root"<<endl;
+    x1= (((-1*b)+ (sqrt((b*b)-(4*a*c))))/(2*a));
+    x2= (((-1*b)- (sqrt((b*b)-(4*a*c))))/(2*a));
+   cout<<"Root1="<<x1<<", Root2="<<x2<<endl;
+    }
+    else if (((b*b)-(4*a*c))<0){
+       cout <<"Imaginary Root"<<endl;
+       x1 = -1*b/(2*a);
+       x2= sqrt(4*a*c-b*b)/(2*a);
+       cout<<"Roots  :"<<x1<<"-"<<x2<<"i"<<endl;
+       cout<<"Roots  :"<<x1<<"+"<<x2<<"i"<<endl;
+     }
+return 0;
+}
+    
