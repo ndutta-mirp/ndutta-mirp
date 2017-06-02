@@ -7,7 +7,7 @@ int main() {
 	cin>>N;
     
 	
-	for (int i=1;i<=N;i++){
+	for (int i=1;i<=(N+3);i+=3){
         cout<<"Enter the no.s"<<endl;
         cin>>no;
 	average+=no;
