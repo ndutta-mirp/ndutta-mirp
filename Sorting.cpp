@@ -5,12 +5,12 @@ int main() {
     cout<<"Enter the number of numbers"<<endl;
     cin>>N;
     int arr[N];
-    for(i=1;i<=N;i++){
+    for(i=0;i<N;i++){
         cout<<"Enter a number= ";
         cin>>arr[i];
     }
     for(i=1;i<N;i++){
-        for(int j=1;j<=(N-i);j++){
+        for(int j=0;j<(N-i);j++){
             if(arr[j]>arr[j+1]){
             t=arr[j];
             arr[j]=arr[j+1];
@@ -19,7 +19,7 @@ int main() {
         }
     }
     cout<<"Sorted Array"<<endl;
-    for(i=1;i<=N;i++){
+    for(i=0;i<N;i++){
         cout<<arr[i]<<endl;
     }
     return 0;
