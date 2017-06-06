@@ -1,11 +1,5 @@
-int white=255, black=0;
-void drawTarget(float x,float y, int N){
-  fill(white);
-  for(int i=N; i>0;i--){
-    if(i%2==0)
-      fill(white);
-      else
-      fill(black);
-      ellipse(x,y,2*radius*i,2*radius*i);
-  }
+void drawcircles(float r,int n){
+  for(int i=0;i<n;++i)
+  for(int j=0;j<n;++j)
+   ellipse(mouseX+i*circlegap,mouseY+j*circlegap,r*2,r*2);
 }
