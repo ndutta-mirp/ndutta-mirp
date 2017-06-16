@@ -4,7 +4,7 @@
 //float Ki=0.001,Kp=0.05,Kd=0.04;
 float Kpx = 0.05, Kdx = 0.03, Kix = 0.01;
 float Kpy = 0.05, Kdy = 0.03, Kiy = 0.01;
-double INPUTx,OUTPUTx, SET_POINTx=520;
+double INPUTx,OUTPUTx, SET_POINTx=500;
 double INPUTy,OUTPUTy, SET_POINTy=530;
 Servo ServoX, ServoY;
 int mx=120, mn=60;
